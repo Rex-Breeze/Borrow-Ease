@@ -1,21 +1,42 @@
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// export default defineNuxtConfig({
+//   devtools: { enabled: true },
+
+
+//   modules: [
+//     [
+//       '@nuxtjs/google-fonts',
+//       {
+//         googleFonts: {
+//           families: {
+//             'Public+Sans': true,
+//           },
+//         },
+//       },
+//     ],
+//     '@nuxtjs/tailwindcss',
+//     'nuxt-icon'
+//   ],
+// })
+
+
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
-
   modules: [
     [
-      '@nuxtjs/google-fonts',
+      "@nuxtjs/google-fonts",
       {
-        googleFonts: {
-          families: {
-            'Public+Sans': true,
-          },
+        families: {
+          "Public Sans": true,
         },
       },
     ],
-    '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    "@nuxtjs/tailwindcss",
+    "nuxt-icon",
   ],
-})
+
+  css: ["@/assets/css/main.scss"],
+});
