@@ -1,5 +1,5 @@
 <template>
-    <div class="font-publicSans">
+    <div>
         <header class="flex w-10/12 justify-between mx-auto py-4 text-xl text-gray-text">
             <img src="../assets/icons/BorrowEasyLogo.svg" class="w-12 h-14" alt="">
             <div class="text-center mt-4">
@@ -16,7 +16,7 @@
             <slot />
         </div>
 
-        <footer class="w-full bg-primary font-light py-20 text-white font-public-sans">
+        <footer class="w-full bg-primary font-light pt-20 pb-10 text-white font-public-sans">
             <div class="flex w-10/12 gap-12 justify-between mx-auto">
                 <div class="w-1/4">
                     <img src="../assets/icons/BorrowEasyLogo.svg" alt="">
@@ -42,11 +42,11 @@
                 <div class="w-1/4">
                     <div class="text-2xl font-semibold">OUR COMPANY</div>
                     <div class="border w-20 border-white mt-1"></div>
-                    <button @click="home" class="text-xl mt-4">Home</button> <br />
-                    <button @click="aboutUs" class="text-xl mt-4">About Us</button> <br />
-                    <button @click="calculator" class="text-xl mt-4">Calculator</button> <br />
-                    <button @click="faq" class="text-xl mt-4">FAQ</button> <br />
-                    <button @click="features" class="text-xl mt-4">Features</button>
+                    <button @click="downFooterLink('home')" class="text-xl mt-4">Home</button> <br />
+                    <button @click="downFooterLink('about')" class="text-xl mt-4">About Us</button> <br />
+                    <button @click="downFooterLink('')" class="text-xl mt-4">Calculator</button> <br />
+                    <button @click="downFooterLink('faq')" class="text-xl mt-4">FAQ</button> <br />
+                    <button @click="downFooterLink('features')" class="text-xl mt-4">Features</button>
                 </div>
                 <div class="w-1/4">
                     <div class="text-2xl font-semibold">CONTACT US</div>
@@ -77,34 +77,29 @@
 <script>
 export default defineComponent({
     name: "myLayout",
-    methods: {
-        openContact() {
-            this.$router.push('/contact');
-        },
-        termsAndCondition() {
-            this.$router.push('/TermsAndConditions');
-        },
-        privacyPolicy() {
-            this.$router.push('/PrivacyPolicy');
-        },
-        home() {
-            this.$router.push('/');
-        },
-        aboutUs() {
-            this.$router.push('/about');
-        },
-        calculator() {
-            this.$router.push('/P');
-        },
-        faq() {
-            this.$router.push('/faq');
-        },
-        features() {
-            this.$router.push('/features');
-        },
-    },
     setup() {
+        const router = useRouter()
+        const openContact = () => {
+            router.push('/contact');
+        }
 
+        const downFooterLink = (val) => {
+            if(val === 'home') {
+                router.push('/');
+            } else if (val === 'about') {
+                router.push('/about');
+            } else if (val === 'faq') {
+                router.push('/faq');
+            } else if (val === 'features') {
+                router.push('/features');
+            } else {
+
+            }
+        }
+        return {
+            openContact,
+            downFooterLink,
+        }
     },
 });
 </script>
@@ -130,4 +125,5 @@ export default defineComponent({
     /* Adjust the width of the underline as desired */
     border-bottom: 2px solid #006778;
     /* Customize the appearance of the underline */
-}</style>
+}
+</style>

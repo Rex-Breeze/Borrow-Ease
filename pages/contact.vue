@@ -16,16 +16,16 @@
         <div class="w-1/2 border border-primary-bg rounded-lg drop-shadow px-8 pt-10">
             <p>Your name</p>
             <input type="text" placeholder="Input loan amount"
-                class="border border-primary-bg px-6 py-4 w-full rounded-lg mt-1 drop-shadow-none">
+                class="border border-primary-bg px-6 py-4 w-full rounded-lg mt-1 focus:outline-none">
             <p class="mt-4">Phone number</p>
             <input type="number" placeholder="Input loan duration"
-                class="border border-primary-bg px-6 py-4 w-full rounded-lg mt-1 drop-shadow-none">
+                class="border border-primary-bg px-6 py-4 w-full rounded-lg mt-1 focus:outline-none">
             <p class="mt-4">Email address</p>
             <input type="email" placeholder="Input loan amount"
-                class="border border-primary-bg px-6 py-4 w-full rounded-lg mt-1 drop-shadow-none">
+                class="border border-primary-bg px-6 py-4 w-full rounded-lg mt-1 focus:outline-none">
             <p class="mt-4">Message</p>
             <textarea placeholder="Input loan duration"
-                class="border border-primary-bg px-6 py-4 w-full rounded-lg h-48 mt-1 drop-shadow-none"></textarea>
+                class="border border-primary-bg px-6 py-4 w-full rounded-lg h-48 mt-1 focus:outline-none"></textarea>
             <button class="border border-primary bg-primary text-white w-full px-12 py-2 rounded-lg mt-8">SEND</button>
         </div>
     </div>

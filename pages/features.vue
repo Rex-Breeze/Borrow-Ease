@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="w-full border border-primary"></div>
-    <div class="h-screen bg-white z-20 relative">
+    <div class="w-full mb-40 bg-white">
         <div class="text-center text-gray-text pt-24">
             <div class="uppercase mx-auto border-0 px-4 py-1 rounded text-secondary bg-secondary-bg text-sm w-40">
                 our features</div>
