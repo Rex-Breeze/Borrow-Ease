@@ -1,5 +1,5 @@
 <template>
-        <div class="bg-primary h-screen">
+        <div class="bg-primary pb-64">
             <div class="flex w-10/12 mx-auto">
                 <div class="text-white w-1/2 justify-center items-center mt-48">
                     <p class="text-6xl leading-16 mb-7">Financial Solutions <br />Through Borrow Ease</p>
@@ -154,7 +154,7 @@
             </div>
             <img src="../assets/images/stamped.png" alt="" class="mx-auto">
         </div>
-        <div class="bg-light-bg h-screen mx-auto px-64 mt-20 relative z-10">
+        <div class="bg-light-bg mx-auto px-64 mt-20 relative z-10">
             <div class="text-center text-gray-text py-20">
                 <div class="uppercase mx-auto border-0 px-4 py-1 rounded text-secondary bg-secondary-bg text-sm w-40">
                     what people say</div>

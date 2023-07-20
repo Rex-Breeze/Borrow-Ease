@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-primary h-screen">
+    <div class="bg-primary">
         <div class="w-2/5 mx-auto text-center">
             <p class="text-[#D9D9D9] text-5xl pt-48">About Us</p>
             <div class="flex relative mt-16">
@@ -59,10 +59,10 @@
             </div>
         </div>
     </div>
-    <div class="bg-light-bg h-screen mx-auto px-40 mt-20 flex relative z-10">
+    <div class="bg-light-bg mx-auto px-40 mt-20 flex relative z-10">
         <div class="w-1/2 pt-16 mr-16">
             <img src="../assets/images/highfive.png" alt="">
-            <div class="flex w-10 mx-auto justify-between mt-12 h-1.5">
+            <div class="flex w-10 mx-auto justify-between mt-12 h-1.5 mb-16">
                 <div class="border-0 w-1.5 bg-primary rounded-full"></div>
                 <div class="border-0 w-1.5 bg-gray-bg rounded-full"></div>
                 <div class="border-0 w-1.5 bg-gray-bg rounded-full"></div>

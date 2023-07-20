@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white h-screen">
+    <div class="bg-white">
         <div class="flex w-10/12 mx-auto">
             <div class="text-primary w-1/2 justify-center items-center mt-48">
                 <p class="text-5xl leading-16 mb-7 mt-24 font-semibold">Our App Features</p>
@@ -9,7 +9,7 @@
             <div class="flex mt-12 mx-auto relative w-1/2">
                 <img src="../assets/images/main.png" alt="" class="z-10 relative mt-14">
             </div>
-            <div class="thin w-64 h-96 rounded-t-full z-0 absolute right-0 -bottom-24"></div>
+            <div class="thin w-64 h-40 rounded-t-full z-0 absolute right-0 bottom-20"></div>
         </div>
     </div>
     <div class="w-full border border-primary"></div>
