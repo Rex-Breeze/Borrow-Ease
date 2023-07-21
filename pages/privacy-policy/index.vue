@@ -103,4 +103,14 @@
     definePageMeta({
         layout: "my-layout",
     })
+
+    export default {
+        name: 'PrivacyPolicy',
+
+        setup () {
+            return {
+                
+            }
+        }
+    }
 </script>

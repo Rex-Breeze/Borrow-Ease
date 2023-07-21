@@ -7,19 +7,19 @@
                     loan repayment amount and make informed financial decisions.</p>
             </div>
             <div class="w-1/2">
-                <img src="../assets/images/lines.png" alt="" class="mb-4 ml-16">
+                <img src="assets/images/lines.png" alt="" class="mb-4 ml-16">
             </div>
         </div>
     </div>
     <Accordion />
     <div class="h-32 w-full bg-white relative z-10"></div>
     <div class="flex w-4/5 mt-32 mx-auto z-0 pb-24">
-        <img src="../assets/images/iPhone 14.png" alt="" class="mx-auto ml-48">
+        <img src="assets/images/iPhone 14.png" alt="" class="mx-auto ml-48">
         <div class="w-4/5 mt-32 ml-40">
             <p class="text-primary text-3xl font-bold left-11 top-5 w-3/4">Do you want to join other users who are changing their financial stories?</p>
             <div class="flex mt-20">
-                <img src="../assets/images/App Store.png" alt="" class="mr-6">
-                <img src="../assets/images/Google Play.png" alt="">
+                <img src="assets/images/App Store.png" alt="" class="mr-6">
+                <img src="assets/images/Google Play.png" alt="">
             </div>
         </div>
         <div class="circle right-0 -mt-64 absolute w-52 h-96 z-0 rounded-l-full border-r-0"></div>
@@ -30,11 +30,16 @@
     definePageMeta({
         layout: "my-layout",
     })
+
+    export default {
+        name: 'Faq',
+        setup () {
+            return {
+
+            }
+        }
+    }
 </script>
 
 <style>
-.circle {
-    border: 40px solid #006778;
-    border-right: 0;
-}
 </style>

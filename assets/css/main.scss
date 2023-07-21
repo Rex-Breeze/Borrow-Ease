@@ -1,6 +1,17 @@
 // Parent Classes
 body {
-  font-family: "Public Sans";
-  font-size: 14px;
-  @apply tracking-wide;
+    font-family: "Public Sans";
+    font-size: 14px;
+    @apply tracking-wide;
+}
+
+.thin {
+    border: 8px solid #CDE01D;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.circle {
+    border: 40px solid #006778;
+    border-right: 0;
 }

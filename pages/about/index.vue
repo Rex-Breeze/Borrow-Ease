@@ -4,8 +4,8 @@
             <p class="text-[#D9D9D9] text-5xl pt-48">About Us</p>
             <div class="flex relative mt-16">
                 <div class="border-8 border-white w-96 h-96 mx-auto mt-28 rounded-full"></div>
-                <img src="../assets/images/iPhone 14.png" alt="" class="absolute left-40 top-48 w-56">
-                <img src="../assets/images/Space Black.png" alt="" class="absolute right-10 top-32 w-56">
+                <img src="assets/images/iPhone 14.png" alt="" class="absolute left-40 top-48 w-56">
+                <img src="assets/images/Space Black.png" alt="" class="absolute right-10 top-32 w-56">
                 <div class="absolute border border-light-gray bg-white left-10 mt-48 flex px-6 py-2 rounded">
                     <Icon name="ri:user-star-line" size="20"
                         class="text-secondary border-0 rounded-full bg-[#F5F9D2] p-1 mr-4 w-11 h-11" />
@@ -37,10 +37,10 @@
         </div>
         <div class="mt-20 relative mr-24">
             <div class="w-96 h-96 rounded-lg bg-secondary absolute"></div>
-            <img src="../assets/images/hands.png" alt="" class="w-96 h-96 relative right-2 top-2">
+            <img src="assets/images/hands.png" alt="" class="w-96 h-96 relative right-2 top-2">
         </div>
     </div>
-    <img src="../assets/images/boy.png" alt="" class="mx-auto mt-24">
+    <img src="assets/images/boy.png" alt="" class="mx-auto mt-24">
     <div class="flex w-3/4 justify-between gap-10 mx-auto mt-12 mb-16 text-gray-text">
         <div class="w-1/2 border-gray-bg border-2 p-8 rounded-lg">
             <div class="border-0 py-2 rounded-lg text-primary bg-primary-bg text-xl w-32 text-center">
@@ -61,7 +61,7 @@
     </div>
     <div class="bg-light-bg mx-auto px-40 mt-20 flex relative z-10">
         <div class="w-1/2 pt-16 mr-16">
-            <img src="../assets/images/highfive.png" alt="">
+            <img src="assets/images/highfive.png" alt="">
             <div class="flex w-10 mx-auto justify-between mt-12 h-1.5 mb-16">
                 <div class="border-0 w-1.5 bg-primary rounded-full"></div>
                 <div class="border-0 w-1.5 bg-gray-bg rounded-full"></div>
@@ -83,12 +83,12 @@
         </div>
     </div>
     <div class="flex w-4/5 mt-32 mx-auto pb-24">
-        <img src="../assets/images/iPhone 14.png" alt="" class="mx-auto ml-48">
+        <img src="assets/images/iPhone 14.png" alt="" class="mx-auto ml-48">
         <div class="w-4/5 mt-32 ml-40">
             <p class="text-primary text-3xl font-bold left-11 top-5 w-3/4">Do you want to join other users who are changing their financial stories?</p>
             <div class="flex mt-20">
-                <img src="../assets/images/App Store.png" alt="" class="mr-6">
-                <img src="../assets/images/Google Play.png" alt="">
+                <img src="assets/images/App Store.png" alt="" class="mr-6">
+                <img src="assets/images/Google Play.png" alt="">
             </div>
         </div>
         <div class="circle right-0 -mt-64 absolute w-52 h-96 z-0 rounded-l-full border-r-0"></div>
@@ -99,11 +99,18 @@
     definePageMeta({
         layout: "my-layout",
     })
+
+    export default {
+        name: 'About',
+        setup () {
+            return {
+
+            }
+        }
+    }
+
 </script>
 
-<style>
-    .circle {
-        border: 40px solid #006778;
-        border-right: 0;
-    }
+<style scoped>
+    
 </style>
