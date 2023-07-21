@@ -1,0 +1,89 @@
+<template>
+    <div>
+        <footer class="w-full bg-primary font-light pt-20 pb-10 text-white font-public-sans">
+            <div class="flex w-10/12 gap-12 justify-between mx-auto">
+                <div class="w-1/4">
+                    <img src="assets/icons/BorrowEasyLogo.svg" alt="">
+                    <div class="mt-6">Our mission is to empower individuals and
+                        businesses by providing them with the
+                        financial resources they
+                        need to achieve their goals.
+                    </div>
+                    <div class="flex mt-6 w-24 justify-between">
+                        <NuxtLink to=""><img src="assets/icons/facebook.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/whatsapp.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/linkedin.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/instagram.svg" alt=""></NuxtLink>
+                    </div>
+                </div>
+                <div class="w-1/4 ml-16 inline-block">
+                    <div class="text-2xl font-semibold">LEGAL</div>
+                    <div class="border w-10 border-white mt-1"></div>
+                    <button @click="downFooterLink('termsAndConditions')" class="text-xl mt-4">Terms & Conditions</button>
+                    <div></div>
+                    <button @click="downFooterLink('privacyPolicy')" class="text-xl mt-4">Privacy Policy</button>
+                </div>
+                <div class="w-1/4">
+                    <div class="text-2xl font-semibold">OUR COMPANY</div>
+                    <div class="border w-20 border-white mt-1"></div>
+                    <button @click="downFooterLink('home')" class="text-xl mt-4">Home</button> <br />
+                    <button @click="downFooterLink('about')" class="text-xl mt-4">About Us</button> <br />
+                    <button @click="downFooterLink('')" class="text-xl mt-4">Calculator</button> <br />
+                    <button @click="downFooterLink('faq')" class="text-xl mt-4">FAQ</button> <br />
+                    <button @click="downFooterLink('features')" class="text-xl mt-4">Features</button>
+                </div>
+                <div class="w-1/4">
+                    <div class="text-2xl font-semibold">CONTACT US</div>
+                    <div class="border w-14 border-white mt-1"></div>
+                    <div class="flex mt-4 text-black-500">
+                        <Icon name="solar:phone-calling-bold" size="30"
+                            class="border border-white mr-4 rounded-full p-1 bg-white text-black" />
+                        <p class="text-xl">+91 99999 99999</p>
+                    </div>
+                    <div class="flex mt-4 text-black-500">
+                        <Icon name="tabler:mail-filled" size="30"
+                            class="border border-white mr-4 rounded-full p-1 bg-white text-black" />
+                        <p class="text-xl">xyzfh5@gmail.com</p>
+                    </div>
+                    <div class="flex mt-4 text-black-500">
+                        <Icon name="majesticons:map-marker" size="30"
+                            class="border border-white mr-4 rounded-full p-1 bg-white text-black" />
+                        <p class="text-xl">Address line-1<br />Address line-2,<br />city, state-pin code.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-white w-10/12 mx-auto mt-12"></div>
+            <p class="text-center mt-4 font-raleway text-xl">All rights reserved. © 2023 BorrowEase</p>
+        </footer>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "Footer",
+    setup() {
+        const router = useRouter()
+
+        const downFooterLink = (val) => {
+            if (val === 'home') {
+                router.push('/');
+            } else if (val === 'about') {
+                router.push('/about');
+            } else if (val === 'faq') {
+                router.push('/faq');
+            } else if (val === 'features') {
+                router.push('/features');
+            } else if (val === 'privacyPolicy') {
+                router.push('/privacy-policy');
+            } else if (val === 'termsAndConditions') {
+                router.push('/terms-and-conditions');
+            }
+        }
+        return {
+            downFooterLink,
+        }
+    },
+}
+</script>
+
+<style scoped></style>

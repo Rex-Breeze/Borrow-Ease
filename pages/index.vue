@@ -9,14 +9,14 @@
                     <div class="flex">
                         <!-- <button class="border bg-white text-primary px-16 py-4 rounded text-base mr-4 font-medium">Apply now</button>
                         <button class="border border-white px-16 py-4 rounded text-base font-medium">Learn more</button> -->
-                        <img src="../assets/images/App Store.png" alt="" class="mr-6">
-                        <img src="../assets/images/Google Play.png" alt="" class="mr-6">
+                        <img src="assets/images/App Store.png" alt="" class="mr-6">
+                        <img src="assets/images/Google Play.png" alt="" class="mr-6">
                     </div>
                 </div>
                 <div class="flex mt-12 mx-auto relative w-1/2">
                     <div class="w-3/4 border-8 border-white rounded-full ml-6"></div>
-                    <img src="../assets/images/iPhone 14.png" alt="" class="absolute mt-10 left-5">
-                    <img src="../assets/images/Space Black.png" alt="" class="absolute left-56 mt-24">
+                    <img src="assets/images/iPhone 14.png" alt="" class="absolute mt-10 left-5">
+                    <img src="assets/images/Space Black.png" alt="" class="absolute left-56 mt-24">
                     <div class="absolute border border-white bg-white left-80 flex px-8 py-2 rounded mt-4">
                         <Icon name="ri:user-star-line" size="20"
                             class="text-secondary border-0 rounded-full bg-[#F5F9D2] p-1 mr-4 w-11 h-11" />
@@ -45,7 +45,7 @@
                 manage their finances from anywhere using their computer or mobile device by downloading our app.</div>
         </div>
         <div class="w-4/5 mx-auto mt-16 text-gray-text relative">
-            <img src="../assets/images/man.png" alt="" class="absolute right-0 -top-5">
+            <img src="assets/images/man.png" alt="" class="absolute right-0 -top-5">
             <div class="border border-border-line bg-white py-4 h-36 rounded-lg w-1/2">
                 <div class="relative mt-8 ml-16">
                     <div class="absolute bg-secondary rounded-lg w-14 h-12"></div>
@@ -114,7 +114,7 @@
                 downloading our app.</div>
         </div>
         <div class="flex w-4/5 mx-auto mt-40">
-            <img src="../assets/images/person.png" alt="" class="mx-auto">
+            <img src="assets/images/person.png" alt="" class="mx-auto">
             <div class="w-1/2 relative">
                 <p class="text-light-gray text-6xl font-extrabold relative">01</p>
                 <p class="text-primary text-3xl font-bold absolute left-11 top-5">Download App</p>
@@ -132,10 +132,10 @@
                     Provide accurate personal information, including contact details, employment information, income details,
                     and the desired loan amount.</p>
             </div>
-            <img src="../assets/images/cabinet.png" alt="" class="mx-auto">
+            <img src="assets/images/cabinet.png" alt="" class="mx-auto">
         </div>
         <div class="flex w-4/5 mx-auto mt-20">
-            <img src="../assets/images/Card.png" alt="" class="mx-auto">
+            <img src="assets/images/Card.png" alt="" class="mx-auto">
             <div class="w-1/2 relative">
                 <p class="text-light-gray text-6xl font-extrabold relative">03</p>
                 <p class="text-primary text-3xl font-bold absolute left-11 top-5">Credit Assessment</p>
@@ -152,7 +152,7 @@
                     the required information and supporting documentation. If the borrower meets the app's lending criteria and
                     passes the credit assessment, the loan is approved after a thorough evaluation, by our team.</p>
             </div>
-            <img src="../assets/images/stamped.png" alt="" class="mx-auto">
+            <img src="assets/images/stamped.png" alt="" class="mx-auto">
         </div>
         <div class="bg-light-bg mx-auto px-64 mt-20 relative z-10">
             <div class="text-center text-gray-text py-20">
@@ -185,10 +185,10 @@
                     </div>
                 </div>
                 <div class="w-64 mt-4 flex mx-auto justify-between">
-                    <img src="../assets/icons/human.svg" alt="">
+                    <img src="assets/icons/human.svg" alt="">
                     <div>
                         <p class="text-bold-gray font-bold mt-1.5">Akanbi Taiwo Mayowa</p>
-                        <p class="mr-11">CEO of Workation</p>
+                        <p class="float-left">CEO of Workation</p>
                     </div>
                 </div>
                 <div class="w-24 mt-14 mx-auto">
@@ -198,12 +198,12 @@
             </div>
         </div>
         <div class="flex w-4/5 mt-32 mx-auto pb-24">
-            <img src="../assets/images/iPhone 14.png" alt="" class="mx-auto ml-48">
+            <img src="assets/images/iPhone 14.png" alt="" class="mx-auto ml-48">
             <div class="w-4/5 mt-32 ml-40">
                 <p class="text-primary text-3xl font-bold left-11 top-5 w-3/4">Do you want to join other users who are changing their financial stories?</p>
                 <div class="flex mt-20">
-                    <img src="../assets/images/App Store.png" alt="" class="mr-6">
-                    <img src="../assets/images/Google Play.png" alt="">
+                    <img src="assets/images/App Store.png" alt="" class="mr-6">
+                    <img src="assets/images/Google Play.png" alt="">
                 </div>
             </div>
             <div class="circle right-0 -mt-64 absolute w-52 h-96 z-0 rounded-l-full border-r-0"></div>
@@ -217,8 +217,4 @@
 </script>
 
 <style scoped>
-    .circle {
-        border: 40px solid #006778;
-        border-right: 0;
-    }
 </style>

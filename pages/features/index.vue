@@ -7,7 +7,7 @@
                     the edge to provide efficient and effective loan to our users. </p>
             </div>
             <div class="flex mt-12 mx-auto relative w-1/2">
-                <img src="../assets/images/main.png" alt="" class="z-10 relative mt-14">
+                <img src="assets/images/main.png" alt="" class="z-10 relative mt-14">
             </div>
             <div class="thin w-64 h-40 rounded-t-full z-0 absolute right-0 bottom-20"></div>
         </div>
@@ -81,16 +81,19 @@
         </div>
         <div class="w-1/2 mx-auto border border-primary-bg rounded-lg px-8 pt-10 pb-16">
             <p>Loan Amount</p>
-            <input type="text" placeholder="Input loan amount" class="border border-primary-bg px-6 py-4 w-full rounded">
-            <div class="text-light-gray justify-between flex font-medium mt-4 mb-2">
-                <p>&#x20A6;0</p>
-                <p>&#x20A6;5,000,000</p>
+            <input type="text" v-model="priceValue" placeholder="Input loan amount"
+                class="border border-primary-bg px-6 py-4 w-full rounded focus:outline-none" @input="checkingValue" />
+            <div class="text-light-gray justify-between flex font-medium mt-4 mb-4">
+                <p>{{ useFormatAmount(priceValue) }}</p>
+                <p>{{ useFormatAmount(maxPriceValue) }}</p>
             </div>
             <div>
-                line for reading the amount
+                <div class="">
+                    <el-slider v-model="priceValue" :max="maxPriceValue" :show-tooltip="false" size="small" />
+                </div>
             </div>
             <p class="mt-4">Loan Duration</p>
-            <input type="text" placeholder="Input loan duration" class="border border-primary-bg px-6 py-4 w-full rounded">
+            <input type="text" placeholder="Input loan duration" class="border border-primary-bg px-6 py-4 w-full rounded focus:outline-none">
             <div class="flex mt-8">
                 <input type="radio" name="Days" id="" class="w-5 h-5 mr-5 border-primary text-primary bg-primary">
                 <p class="text-bold-gray">Days</p>
@@ -114,7 +117,7 @@
         </div>
     </div>
     <div class="w-10/12 h-4/5 bg-white flex mx-auto mt-20">
-        <img src="../assets/images/people.png" alt="" class="mt-20">
+        <img src="assets/images/people.png" alt="" class="mt-20">
         <div class="mt-8 mx-auto w-1/2">
             <div class="ml-9 leading-10 text-gray-text text-lg w-11/12 mt-6">
                 <p class="text-5xl text-primary font-semibold mb-8">
@@ -180,10 +183,10 @@
 
             </div>
         </div>
-        <img src="../assets/images/robot.png" alt="" class="mt-20">
+        <img src="assets/images/robot.png" alt="" class="mt-20">
     </div>
     <div class="w-10/12 h-4/5 bg-white flex mx-auto mt-20">
-        <img src="../assets/images/people.png" alt="" class="mt-20">
+        <img src="assets/images/people.png" alt="" class="mt-20">
         <div class="mt-8 mx-auto w-1/2">
             <div class="ml-9 leading-10 text-gray-text text-lg w-11/12 mt-6">
                 <p class="text-5xl text-primary font-semibold mb-8">
@@ -240,15 +243,16 @@
                 </div>
             </div>
         </div>
-        <img src="../assets/images/gift.png" alt="" class="mt-20">
+        <img src="assets/images/gift.png" alt="" class="mt-20">
     </div>
     <div class="flex full mx-auto bg-primary-bg py-24">
-        <img src="../assets/images/iPhone 14.png" alt="" class="mx-auto pl-40">
+        <img src="assets/images/iPhone 14.png" alt="" class="mx-auto pl-40">
         <div class="w-4/5 mt-32 ml-60">
-            <p class="text-primary text-3xl font-bold left-11 top-5 w-2/4">Do you want to join other users who are changing their financial stories?</p>
+            <p class="text-primary text-3xl font-bold left-11 top-5 w-2/4">Do you want to join other users who are changing
+                their financial stories?</p>
             <div class="flex mt-20">
-                <img src="../assets/images/App Store.png" alt="" class="mr-6">
-                <img src="../assets/images/Google Play.png" alt="">
+                <img src="assets/images/App Store.png" alt="" class="mr-6">
+                <img src="assets/images/Google Play.png" alt="">
             </div>
         </div>
         <div class="circle right-0 -mt-64 absolute w-52 h-96 z-0 rounded-l-full border-r-0"></div>
@@ -256,19 +260,34 @@
 </template>
 
 <script>
-    definePageMeta({
-        layout: "my-layout",
-    })
+import { useFormatAmount } from "~/composables/useFormatAmount";
+
+definePageMeta({
+    layout: "my-layout",
+})
+
+export default {
+    name: 'Features',
+
+    setup() {
+        const priceValue = ref(0);
+        const maxPriceValue = ref(0);
+
+        onMounted(async () => {
+            maxPriceValue.value = 2000000;
+        });
+
+        const checkingValue = () => {
+            priceValue.value = Number(priceValue.value);
+        }
+        return {
+            priceValue,
+            maxPriceValue,
+            useFormatAmount,
+            checkingValue
+        }
+    }
+}
 </script>
 
-<style>
-    .thin {
-        border: 8px solid #CDE01D;
-        border-right: 0;
-        border-bottom: 0;
-    }
-    .circle {
-        border: 40px solid #006778;
-        border-right: 0;
-    }
-</style>
+<style></style>

@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     ],
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
+    "@element-plus/nuxt",
   ],
 
   css: ["@/assets/css/main.scss"],
