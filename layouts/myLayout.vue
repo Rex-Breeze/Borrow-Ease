@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="flex w-10/12 justify-between mx-auto py-4 text-xl text-gray-text">
-            <img src="../assets/icons/BorrowEasyLogo.svg" class="w-12 h-14" alt="">
+            <img src="assets/icons/BorrowEasyLogo.svg" class="w-12 h-14" alt="">
             <div class="text-center mt-4">
                 <NuxtLink to="/" class="line mr-4">Home</NuxtLink>
                 <NuxtLink to="/about" class="line mr-4">About</NuxtLink>
@@ -19,17 +19,17 @@
         <footer class="w-full bg-primary font-light pt-20 pb-10 text-white font-public-sans">
             <div class="flex w-10/12 gap-12 justify-between mx-auto">
                 <div class="w-1/4">
-                    <img src="../assets/icons/BorrowEasyLogo.svg" alt="">
+                    <img src="assets/icons/BorrowEasyLogo.svg" alt="">
                     <div class="mt-6">Our mission is to empower individuals and
                         businesses by providing them with the
                         financial resources they
                         need to achieve their goals.
                     </div>
                     <div class="flex mt-6 w-24 justify-between">
-                        <NuxtLink to=""><img src="../assets/icons/facebook.svg" alt=""></NuxtLink>
-                        <NuxtLink to=""><img src="../assets/icons/whatsapp.svg" alt=""></NuxtLink>
-                        <NuxtLink to=""><img src="../assets/icons/linkedin.svg" alt=""></NuxtLink>
-                        <NuxtLink to=""><img src="../assets/icons/instagram.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/facebook.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/whatsapp.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/linkedin.svg" alt=""></NuxtLink>
+                        <NuxtLink to=""><img src="assets/icons/instagram.svg" alt=""></NuxtLink>
                     </div>
                 </div>
                 <div class="w-1/4 ml-16 inline-block">

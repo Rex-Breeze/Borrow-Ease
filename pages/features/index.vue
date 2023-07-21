@@ -7,7 +7,7 @@
                     the edge to provide efficient and effective loan to our users. </p>
             </div>
             <div class="flex mt-12 mx-auto relative w-1/2">
-                <img src="../assets/images/main.png" alt="" class="z-10 relative mt-14">
+                <img src="assets/images/main.png" alt="" class="z-10 relative mt-14">
             </div>
             <div class="thin w-64 h-40 rounded-t-full z-0 absolute right-0 bottom-20"></div>
         </div>
@@ -114,7 +114,7 @@
         </div>
     </div>
     <div class="w-10/12 h-4/5 bg-white flex mx-auto mt-20">
-        <img src="../assets/images/people.png" alt="" class="mt-20">
+        <img src="assets/images/people.png" alt="" class="mt-20">
         <div class="mt-8 mx-auto w-1/2">
             <div class="ml-9 leading-10 text-gray-text text-lg w-11/12 mt-6">
                 <p class="text-5xl text-primary font-semibold mb-8">
@@ -180,10 +180,10 @@
 
             </div>
         </div>
-        <img src="../assets/images/robot.png" alt="" class="mt-20">
+        <img src="assets/images/robot.png" alt="" class="mt-20">
     </div>
     <div class="w-10/12 h-4/5 bg-white flex mx-auto mt-20">
-        <img src="../assets/images/people.png" alt="" class="mt-20">
+        <img src="assets/images/people.png" alt="" class="mt-20">
         <div class="mt-8 mx-auto w-1/2">
             <div class="ml-9 leading-10 text-gray-text text-lg w-11/12 mt-6">
                 <p class="text-5xl text-primary font-semibold mb-8">
@@ -240,15 +240,15 @@
                 </div>
             </div>
         </div>
-        <img src="../assets/images/gift.png" alt="" class="mt-20">
+        <img src="assets/images/gift.png" alt="" class="mt-20">
     </div>
     <div class="flex full mx-auto bg-primary-bg py-24">
-        <img src="../assets/images/iPhone 14.png" alt="" class="mx-auto pl-40">
+        <img src="assets/images/iPhone 14.png" alt="" class="mx-auto pl-40">
         <div class="w-4/5 mt-32 ml-60">
             <p class="text-primary text-3xl font-bold left-11 top-5 w-2/4">Do you want to join other users who are changing their financial stories?</p>
             <div class="flex mt-20">
-                <img src="../assets/images/App Store.png" alt="" class="mr-6">
-                <img src="../assets/images/Google Play.png" alt="">
+                <img src="assets/images/App Store.png" alt="" class="mr-6">
+                <img src="assets/images/Google Play.png" alt="">
             </div>
         </div>
         <div class="circle right-0 -mt-64 absolute w-52 h-96 z-0 rounded-l-full border-r-0"></div>
@@ -259,16 +259,17 @@
     definePageMeta({
         layout: "my-layout",
     })
+
+    export default {
+        name: 'Features',
+        setup () {
+            return {
+
+            }
+        }
+    }
 </script>
 
 <style>
-    .thin {
-        border: 8px solid #CDE01D;
-        border-right: 0;
-        border-bottom: 0;
-    }
-    .circle {
-        border: 40px solid #006778;
-        border-right: 0;
-    }
+    
 </style>
