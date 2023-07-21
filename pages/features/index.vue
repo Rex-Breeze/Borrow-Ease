@@ -81,13 +81,16 @@
         </div>
         <div class="w-1/2 mx-auto border border-primary-bg rounded-lg px-8 pt-10 pb-16">
             <p>Loan Amount</p>
-            <input type="text" placeholder="Input loan amount" class="border border-primary-bg px-6 py-4 w-full rounded">
-            <div class="text-light-gray justify-between flex font-medium mt-4 mb-2">
-                <p>&#x20A6;0</p>
-                <p>&#x20A6;5,000,000</p>
+            <input type="text" v-model="priceValue" placeholder="Input loan amount"
+                class="border border-primary-bg px-6 py-4 w-full rounded" @input="checkingValue" />
+            <div class="text-light-gray justify-between flex font-medium mt-4 mb-4">
+                <p>{{ useFormatAmount(priceValue) }}</p>
+                <p>{{ useFormatAmount(maxPriceValue) }}</p>
             </div>
             <div>
-                line for reading the amount
+                <div class="">
+                    <el-slider v-model="priceValue" :max="maxPriceValue" :show-tooltip="false" size="small" />
+                </div>
             </div>
             <p class="mt-4">Loan Duration</p>
             <input type="text" placeholder="Input loan duration" class="border border-primary-bg px-6 py-4 w-full rounded">
@@ -245,7 +248,8 @@
     <div class="flex full mx-auto bg-primary-bg py-24">
         <img src="assets/images/iPhone 14.png" alt="" class="mx-auto pl-40">
         <div class="w-4/5 mt-32 ml-60">
-            <p class="text-primary text-3xl font-bold left-11 top-5 w-2/4">Do you want to join other users who are changing their financial stories?</p>
+            <p class="text-primary text-3xl font-bold left-11 top-5 w-2/4">Do you want to join other users who are changing
+                their financial stories?</p>
             <div class="flex mt-20">
                 <img src="assets/images/App Store.png" alt="" class="mr-6">
                 <img src="assets/images/Google Play.png" alt="">
@@ -256,20 +260,34 @@
 </template>
 
 <script>
-    definePageMeta({
-        layout: "my-layout",
-    })
+import { useFormatAmount } from "~/composables/useFormatAmount";
 
-    export default {
-        name: 'Features',
-        setup () {
-            return {
+definePageMeta({
+    layout: "my-layout",
+})
 
-            }
+export default {
+    name: 'Features',
+
+    setup() {
+        const priceValue = ref(0);
+        const maxPriceValue = ref(0);
+
+        onMounted(async () => {
+            maxPriceValue.value = 2000000;
+        });
+
+        const checkingValue = () => {
+            priceValue.value = Number(priceValue.value);
+        }
+        return {
+            priceValue,
+            maxPriceValue,
+            useFormatAmount,
+            checkingValue
         }
     }
+}
 </script>
 
-<style>
-    
-</style>
+<style></style>

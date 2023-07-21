@@ -21,6 +21,7 @@ definePageMeta({
 export default {
     name: 'TermsAndConditions',
     data() {
+
         return {
             items: [
                 { id: '1.',
