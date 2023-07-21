@@ -81,7 +81,7 @@
         </div>
         <div class="w-1/2 mx-auto border border-primary-bg rounded-lg px-8 pt-10 pb-16">
             <p>Loan Amount</p>
-            <input type="text" placeholder="Input loan amount" class="border border-primary-bg px-6 py-4 w-full rounded">
+            <input type="text" placeholder="Input loan amount" class="border border-primary-bg px-6 py-4 w-full rounded focus:outline-none">
             <div class="text-light-gray justify-between flex font-medium mt-4 mb-2">
                 <p>&#x20A6;0</p>
                 <p>&#x20A6;5,000,000</p>
@@ -90,7 +90,7 @@
                 line for reading the amount
             </div>
             <p class="mt-4">Loan Duration</p>
-            <input type="text" placeholder="Input loan duration" class="border border-primary-bg px-6 py-4 w-full rounded">
+            <input type="text" placeholder="Input loan duration" class="border border-primary-bg px-6 py-4 w-full rounded focus:outline-none">
             <div class="flex mt-8">
                 <input type="radio" name="Days" id="" class="w-5 h-5 mr-5 border-primary text-primary bg-primary">
                 <p class="text-bold-gray">Days</p>
