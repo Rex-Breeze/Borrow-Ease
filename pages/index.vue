@@ -1,4 +1,8 @@
 <template>
+  <!-- sliding carousel -->
+  <ImageSlide/>
+  <!-- <Slider /> -->
+  <!-- sliding carousel -->
   <div class="bg-primary px-8 md:px-24 md:pb-64 pb-12">
     <div class="flex">
       <div
@@ -316,6 +320,7 @@
         We have gotten positive responses from people that have used our app and
         here is what they say about us.
       </div>
+
       <div class="flex w-16 justify-between mx-auto mt-12 h-1.5">
         <div class="border-0 w-1.5 bg-gray-bg rounded-full"></div>
         <div class="border-0 w-1.5 bg-gray-bg rounded-full"></div>
@@ -385,12 +390,52 @@
     ></div>
   </div>
   <!-- WHAT PEOPLE SAY END-->
+
+  <!-- sliding carousel -->
+  <!-- <div class="">
+    <p class="text-4xl">BOLAJI</p>
+    <div
+      v-if="images.length > 0"
+      class="transition-transform duration-1000 ease-in-out transform"
+      :style="`translateX(${currentSlide * -100}%)`"
+    >
+      <div
+        v-for="(image, index) in images"
+        :key="index"
+        class="inline-block w-full"
+      >
+        <img :src="image" alt="Slide" class="w-full h-auto" />
+      </div>
+    </div>
+  </div> -->
+  <!-- sliding carousel -->
 </template>
 
 <script>
 definePageMeta({
   layout: "my-layout",
 });
-</script>
+export default {
+  name: "Dashboard",
+  setup() {
+    const images = ref([
+      "https://via.placeholder.com/800x400/FF0000/FFFFFF?text=Slide+1",
+      "https://via.placeholder.com/800x400/00FF00/FFFFFF?text=Slide+2",
+      "https://via.placeholder.com/800x400/0000FF/FFFFFF?text=Slide+3",
+    ]);
+    const currentSlide = ref(0);
 
-<style scoped></style>
+    onMounted(() => {
+      setInterval(() => {
+        currentSlide.value = (currentSlide.value + 1) % images.value.length;
+      }, 10000); // 10 seconds interval
+    });
+
+    return {
+      images,
+      currentSlide,
+      setInterval,
+    };
+  },
+};
+</script>
