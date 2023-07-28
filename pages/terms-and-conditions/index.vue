@@ -2,7 +2,7 @@
     <div class="px-32 text-gray-text text-xl leading-9 pb-24">
         <div class="text-5xl text-primary pt-48 font-semibold mb-16">Terms and Condition</div>
         <p>Terms and Conditions for Borrow Ease</p>
-        <div v-for="(item, index) in items">
+        <div v-for="(item) in items" :key="item">
             <div class="flex">
                 <p class="mr-4 ml-2">{{ item.id }}</p>
                 <p>{{ item.heading }}</p>
@@ -13,12 +13,15 @@
 </template>
 
 <script>
+
 definePageMeta({
         layout: "my-layout",
     })
 
 export default {
+    name: 'TermsAndConditions',
     data() {
+
         return {
             items: [
                 { id: '1.',
